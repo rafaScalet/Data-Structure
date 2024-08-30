@@ -7,14 +7,10 @@ public class Node<T> {
 	private Node<T> next; // ^ Cria um "ponteiro" (java não trabalha com ponteiros, mas isso é como se fosse) para o próximo nó
 	private Node<T> prev; // ^ Cria um "ponteiro" (java não trabalha com ponteiros, mas isso é como se fosse) para o nó anterior
 
-	// * Métodos Getters e Setters para cada atributo.
+	// * Métodos Getters e Setters para cada atributo, menos para o value, que só tem o getter, pois é passado na hora de instanciar e não deve ser mais alterado depois disso
 
 	public T getValue() {
 		return value;
-	}
-
-	public void setValue(T value) {
-		this.value = value;
 	}
 
 	public Node<T> getNext() {
