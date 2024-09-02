@@ -40,7 +40,7 @@ public class DoubleLinearList<T> {
 	// ? Método do tipo void (por que não precisa retornar nada) para adicionar um novo nó
 	// ? O parâmetro passado é o valor do nó a ser adicionado, ele é passado como um tipo genérico definido na hora de instanciar
 	public void add (T value) {
-		Node<T> node =  new Node<>(value); // ^ Cria um novo nó chamado node, passando para ele o valor com o tipo T
+		Node<T> node = new Node<>(value); // ^ Cria um novo nó chamado node, passando para ele o valor com o tipo T
 		if (this.isEmpty()) {
 			this.bottom = this.top = node; // ^ Faz com que tudo aponte para o valor passado como parâmetro, assim fazendo com que seja o único nó
 			this.size++; // ^ Acrescenta 1 ao tamanho da lista
@@ -104,7 +104,7 @@ public class DoubleLinearList<T> {
 
 	// ? Método do tipo void (por que não precisa retornar nada) para encaixar (append) um novo nó, passa um parâmetro com tipo genérico
 	public void append (T value) {
-		Node<T> node = new Node<>();
+		Node<T> node = new Node<>(value);
 		// ? Verifica se está vazia para fazer a primeira inserção na lista
 		// ? Isso é importante pois o "this.top" não pode ser nulo para a próxima parte do código funcionar
 		if (this.isEmpty()) {
