@@ -69,4 +69,13 @@ public class Queue<T> {
 			temp = temp.getNext();
 		}
 	}
+
+	// ? Método que mostrará a fila em uma única linha, para facilitar o exercício de separar uma expressão
+	public void showInLine () {
+		Node<T> temp = this.top;
+		while (temp != null) {
+			System.out.print(temp.getValue());
+			temp = temp.getNext();
+		}
+	}
 }
