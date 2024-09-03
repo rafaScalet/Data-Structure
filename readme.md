@@ -52,7 +52,7 @@ root/
 ├── LICENSE
 └── readme.md
 ```
-tudo que está dentro do diretório [main](/src/main/) são os exemplos de como funciona cada funcionalidade. [Exercises](/src/exercise/) são os exercícios feitos em aula e [Data](/src/data/) estão as estruturas implementadas. Já o [Docs](/docs/) é onde toda o documentação está
+tudo que está dentro do diretório [Main](/src/main/) são os exemplos de como funciona cada funcionalidade. [Exercises](/src/exercise/) são os exercícios feitos em aula e [Data](/src/data/) estão as estruturas implementadas. Já o [Docs](/docs/) é onde toda o documentação está
 
 ## Lista de Exemplos
 
@@ -63,11 +63,13 @@ A lista está em ordem de implementações , tente segui-la para melhor entendim
  - [Node Linking](/docs/node/NodeLinking.md)
  - [DoubleLinearList](/docs/list/DoubleLinearList.md)
  - [Stack](/docs/stack/Stack.md)
+ - [Queue](/docs/queue/Queue.md)
 
 ### Exercícios
 
 Os "exercises" podem ser vistos na ordem que quiser, por não ser uma implementação real de algo. Alguns deles usam estruturas implementadas, caso isso ocorra, veja as estruturas antes.
 
- - [Resolve Reverse Polish Notation](/docs/exercises/RPN.md)
- - [Infix Expression to Postfix](/docs/exercises/RPN.md)
- - [Check If Is Balanced](/docs/exercises/Checker.md)
+ - [Resolve Reverse Polish Notation](docs/exercises/RPN.md#resolve)
+ - [Infix Expression to Postfix](docs/exercises/RPN.md#infix-to-postfix)
+ - [Check If Is Balanced](docs/exercises/Checker.md#check-if-is-balanced)
+ - [Check If Is Palindrome](docs/exercises/Checker.md#check-if-is-palindrome)

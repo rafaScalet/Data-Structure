@@ -5,6 +5,7 @@
 ## Índice
 
  - [Check if is balanced](#check-if-is-balanced)
+ - [Check if is palindrome](#check-if-is-palindrome)
 
 # Check if is balanced
 
@@ -78,3 +79,48 @@ private static boolean isMatching (char opened, char closed) {
 		(opened == '(' && closed == ')')
 	);
 }
+```
+
+# Check if is Palindrome
+
+> Demo: [CheckIfIsPalindrome.java](/src/main/CheckIfIsPalindrome.java)
+
+## Introdução
+
+O problema pedia para receber uma String e verificar, usando filas, se ela é um palíndromo ou não
+
+## Resolução
+
+### Método isPalindrome
+
+1. Primeiro criei um método de tipo boolean, estático e que receberá a expressão como o parâmetro e já instancio uma nova pilha e fila nele.
+
+```java
+public static boolean isPalindrome (String expression) {
+	Stack<Character> stack = new Stack<>();
+	Queue<Character> queue = new Queue<>();
+}
+```
+
+2. Depois percorro a expressão usando um for, e divido ela em uma variável chamada character, e já coloco este carácter dentro da minha pilha e fila
+
+```java
+for (int index = 0; index < expression.length(); index++) {
+	char character = expression.charAt(index);
+
+	stack.push(character);
+	queue.add(character);
+}
+```
+
+3. Depois, enquanto minha fila não estiver vazio, eu comparo os valores da minha fila com a minha pilha e caso seja diferente retorno falso se for tudo igual retorna verdadeiro
+
+```java
+while (!queue.isEmpty()) {
+	if (queue.remove() != stack.pop()) {
+		return false;
+	}
+}
+
+return true;
+```
