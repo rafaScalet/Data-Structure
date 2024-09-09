@@ -59,7 +59,6 @@ tudo que está dentro do diretório [Main](/src/main/) são os exemplos de como 
 A lista está em ordem de implementações , tente segui-la para melhor entendimento
 
  - [Node](/docs/node/Node.md)
- - [Node Types](/docs/node/NodeTypes.md)
  - [Node Linking](/docs/node/NodeLinking.md)
  - [DoubleLinearList](/docs/list/DoubleLinearList.md)
  - [Stack](/docs/stack/Stack.md)
@@ -73,3 +72,4 @@ Os "exercises" podem ser vistos na ordem que quiser, por não ser uma implementa
  - [Infix Expression to Postfix](docs/exercises/RPN.md#infix-to-postfix)
  - [Check If Is Balanced](docs/exercises/Checker.md#check-if-is-balanced)
  - [Check If Is Palindrome](docs/exercises/Checker.md#check-if-is-palindrome)
+ - [Ordination By Queue](/docs/exercises/Ordination.md)

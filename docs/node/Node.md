@@ -61,7 +61,6 @@ public Node(T value) {
 
 ## Demonstrações
 
-	As demonstrações de como o node funcionam são as seguintes:
+As demonstrações de como o node funcionam são as seguintes:
 	
-	- [Node Types](/docs/node/NodeTypes.md) para a demonstração dos tipos genéricos.
-	- [Node Linking](/docs/node/NodeLinking.md) para a demonstração de como a "ligar" um nó em outro.
+- [Node Types](/docs/node/NodeTypes.md) para a demonstração dos tipos genéricos.
