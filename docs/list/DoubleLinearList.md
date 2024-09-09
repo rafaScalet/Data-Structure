@@ -44,6 +44,10 @@ Primeiramente criamos um novo nó com o valor passado como parâmetro
 Node<T> node =  new Node<>(value); // value é do tipo "T"
 ```
 
+**Representação Gráfica**
+
+![a](/docs/assets/list/add/step1.drawio.svg)
+
 Depois, verificamos se a lista está vazia, e aplicamos a lógica caso esteja
 
 ```java
@@ -53,6 +57,10 @@ if (this.isEmpty()) {
 	return;
 }
 ```
+
+**Representação Gráfica**
+
+![a](/docs/assets/list/add/step2.drawio.svg)
 
 Caso não esteja vazio, aplica a lógica convencional de adição
 
@@ -65,6 +73,10 @@ this.top.setPrev(node);
 this.top = node;
 this.size++;
 ```
+
+**Representação Gráfica**
+
+![a](/docs/assets/list/add/step3.drawio.svg)
 
 ### APPEND (minha forma)
 
@@ -91,13 +103,6 @@ this.size++;
 
 Como descrito no documento, tem 3 funcionalidades dependendo do estado da lista, se estiver vazio, com um elemento ou com mais de um elemento.
 
-1. Se estiver vazio retorna nulo
-```java
-if (isEmpty()) {
-	return null;
-}
-```
-
 > Este código é executado antes das checagens descritas acima
 
 ```java
@@ -106,6 +111,13 @@ Node<T> currentTop = this.top;
 
 // Faz com que o "topo" seja um "depois" dele
 this.top = this.top.getNext();
+```
+
+1. Se estiver vazio retorna nulo
+```java
+if (isEmpty()) {
+	return null;
+}
 ```
 
 2. Se estiver com um elemento faz com que o bottom também seja nulo
