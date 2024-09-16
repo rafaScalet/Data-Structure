@@ -35,10 +35,11 @@ public class Stack<T> {
 		if (isEmpty()) {
 			return null;
 		}
-		Node<T> temp = this.top; // ^ Cria uma variável temporária com o valor de "this.top"
+		Node<T> currentTop = this.top; // ^ Cria uma variável temporária com o valor de "this.top"
 		this.top = this.top.getPrev(); // ^ Atribui o "próximo" valor do "this.top" ao próprio "this.top"
+		currentTop.setPrev(null);
 		this.size--;
-		return temp.getValue(); // ^ Retorna o valor inicial do "this.top"
+		return currentTop.getValue(); // ^ Retorna o valor inicial do "this.top"
 	}
 
 	// ? Método show com uma lógica mais "clean"
