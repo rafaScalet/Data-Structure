@@ -10,21 +10,39 @@ public class SearchTree<T> {
 	}
 
 	public void add (T value) {
+		Node<T> node = new Node<>(value);
+
+		if (this.root == null) {
+			this.root = node;
+			return;
+		}
+
+		if ((int) value <= (int) root.getValue()) {
+			node = add(root.getPrev(), value);
+			root.setPrev(node);
+			return;
+		}
+
+		node = add(root.getNext(), value);
+		root.setNext(node);
+	}
+
+	private Node<T> add (Node<T> root, T value) {
+		Node<T> node = new Node<>(value);
+
 		if (root == null) {
-			this.root = new Node<>(value);
-			return;
+			root = node;
+			return root;
 		}
 
-		if (root.getPrev() == null) {
-			root.setNext(new Node<>(value));
-			return;
+		if ((int) value <= (int) root.getValue()) {
+			node = add(root.getPrev(), value);
+			root.setPrev(node);
+			return node;
 		}
 
-		if (root.getNext() == null) {
-			root.setPrev(new Node<>(value));
-			return;
-		}
-
-		this.add(value);
+		node = add(root.getNext(), value);
+		root.setNext(node);
+		return node;
 	}
 }
